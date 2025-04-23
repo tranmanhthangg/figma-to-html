@@ -55,6 +55,21 @@ a {
     opacity: 0.8;
 }
 
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
+.break-all {
+    word-break: break-all;
+}
+
 /*==================== header ====================*/
 
 .header {
@@ -338,6 +353,7 @@ a {
     border-radius: 12px;
     border: 1px solid #E2DFDA;
     background: #FFF;
+    flex: 1
 }
 
 .popular .course-item:hover {
