@@ -495,7 +495,7 @@ a {
     line-height: 154%;
 }
 
-/* ==================== featrues ==================== */
+/* ==================== featrues-1 ==================== */
 
 .featrues {
     margin-top: 135px;
@@ -543,4 +543,23 @@ a {
     height: 50px;
     border-radius: 26px;
     background: var(--primary-color);
+}
+
+/* ==================== featrues-2 ==================== */
+
+.featrues-2nd {
+    margin-top: 70px;
+}
+
+.featrues-2nd .body {
+    flex-direction: row-reverse;
+}
+
+.featrues-2nd .images img {
+    width: 470px;
+    height: 440px;
+}
+
+.featrues-2nd .content {
+    width: 49%;
 }
