@@ -430,9 +430,16 @@ a {
     background: #2E2100;
 }
 
+.feedback .feedback-list {
+    display: flex;
+    overflow: hidden;
+}
+
 .feedback-item {
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-shrink: 0;
 }
 
 .feedback .avatar {
