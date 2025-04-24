@@ -588,10 +588,12 @@ a {
     margin-top: 55px;
     display: flex;
     gap: 30px;
+    overflow: hidden;
 }
 
 .blog .item {
-    width: 33.33%;
+    flex-shrink: 0;
+    width: calc(33.33% - 20px);
     border-radius: 16px;
     background: #FFF;
 }
@@ -654,8 +656,29 @@ a {
 
 .blog .item .btn {
     margin-top: 12px;
+    font-size: 1.4rem;
 }
 
 .blog .item .btn:hover {
     background-color: var(--primary-color);
+}
+
+.blog .dots {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.blog .dots .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #5F5B53;
+    cursor: pointer;
+}
+
+.blog .dots .dot.active {
+    background-color: var(--primary-color);
+    cursor: default;
 }
