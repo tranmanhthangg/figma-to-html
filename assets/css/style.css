@@ -421,3 +421,69 @@ a {
 .popular .course-item .foot .btn-book:hover {
     background-color: var(--primary-color);
 }
+
+/* ==================== feedback ====================*/
+
+.feedback {
+    margin-top: 135px;
+    padding: 96px 0 96px;
+    background: #2E2100;
+}
+
+.feedback-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feedback .info .member-name {
+    margin-top: 18px;
+    color: #F7F7F7;
+    font-family: var(--font-heading);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 142%;
+}
+
+.feedback .info .desc {
+    margin-top: 4px;
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    line-height: 186%; /* 185.714% */
+}
+
+.feedback .info .dots {
+    margin-top: 28px;
+    display: flex;
+    gap: 6px;
+}
+
+.feedback .info .dots .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #634700;
+    cursor: pointer;
+}
+
+.feedback .info .dots .dot.active {
+    background-color: var(--primary-color);
+    cursor: default;
+}
+
+.feedback .content {
+    width: 66%;
+}
+
+.feedback .content blockquote {
+    color: #FFF;
+    font-size: 2.6rem;
+    font-style: italic;
+    line-height: 154%;
+}
